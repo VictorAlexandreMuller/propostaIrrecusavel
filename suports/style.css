@@ -1,0 +1,54 @@
+:root {
+  --fonte-principal: Arial, serif;
+}
+
+body {
+  text-align: center;
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+p {
+  font-family: var(--fonte-principal);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.question {
+  margin-top: 50px;
+  font-size: 24px;
+}
+.btn-yes {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 20px;
+  font-family: var(--fonte-principal);
+}
+.btn-no {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 20px;
+  font-family: var(--fonte-principal);
+}
+
+.hidden {
+  display: none;
+}

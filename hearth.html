@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heart Pixelizado</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="heartCanvas"></canvas>
+    <script>
+      // Definindo o tamanho do canvas igual ao tamanho da janela
+      var canvas = document.getElementById("heartCanvas");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      var ctx = canvas.getContext("2d");
+
+      // Desenhando o coração pixelizado
+      ctx.fillStyle = "#ff0000"; // Cor vermelha
+      var scale = 10; // Fator de escala para o coração
+      var pixelHeart = [
+        "001110000011100",
+        "011111000111110",
+        "111111111111111",
+        "111111111111111",
+        "111111111111111",
+        "011111111111110",
+        "001111111111100",
+        "000111111111000",
+        "000011111110000",
+        "000001111100000",
+        "000000111000000",
+        "000000010000000",
+      ];
+
+      for (var i = 0; i < pixelHeart.length; i++) {
+        for (var j = 0; j < pixelHeart[i].length; j++) {
+          if (pixelHeart[i][j] === "1") {
+            ctx.fillRect(j * scale, i * scale, scale, scale);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
