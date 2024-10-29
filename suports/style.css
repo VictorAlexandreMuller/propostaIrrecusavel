@@ -9,14 +9,14 @@
 
 body {
   background-color: rgb(24, 24, 24);
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .centralizar {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 p {
