@@ -9,9 +9,7 @@ function aceitarProposta() {
 
   // Adiciona uma mensagem após um breve atraso
   setTimeout(function () {
-    alert(
-      "Obrigado por escolher a resposta correta! Eu juro que sempre cuidarei muito bem dela."
-    );
+    alert("TE AMO <3");
   }, 500);
 
   // Desenha o coração pixelizado
